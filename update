@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Updating Whaticket, please wait."
+echo "Updating Talkdialog, please wait."
 
 git pull
 cd backend
