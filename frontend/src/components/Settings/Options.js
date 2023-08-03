@@ -409,6 +409,7 @@ export default function Options(props) {
         </Grid>
               */}
       </Grid>
+      {/*}
       <Grid spacing={3} container>
         <Tabs
           indicatorColor="primary"
@@ -428,6 +429,8 @@ export default function Options(props) {
         </Tabs>
 
       </Grid>
+      */}
+      
       {/*-----------------IXC-----------------*/}
       {/*}
       <Grid spacing={3} container
