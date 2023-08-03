@@ -110,7 +110,7 @@ const SettingsCustom = () => {
           setCompany(company);
           setSchedules(company.schedules);
           setSettings(settingList);
-  
+
           if (Array.isArray(settingList)) {
             const scheduleType = settingList.find(
               (d) => d.key === "scheduleType"
@@ -119,7 +119,7 @@ const SettingsCustom = () => {
               setSchedulesEnabled(scheduleType.value === "company");
             }
           }
-  
+
           const user = await getCurrentUserInfo();
           setCurrentUser(user);
         } catch (e) {
@@ -169,8 +169,8 @@ const SettingsCustom = () => {
           {/*
           {isSuper() ? <Tab label="Empresas" value={"companies"} /> : null}
           {isSuper() ? <Tab label="Planos" value={"plans"} /> : null}
-          */}
           {isSuper() ? <Tab label="Ajuda" value={"helps"} /> : null}
+          */}
         </Tabs>
         <Paper className={classes.paper} elevation={0}>
           <TabPanel
