@@ -429,6 +429,7 @@ export default function Options(props) {
 
       </Grid>
       {/*-----------------IXC-----------------*/}
+      {/*}
       <Grid spacing={3} container
         style={{ marginBottom: 10 }}>
         <Tabs
@@ -482,7 +483,9 @@ export default function Options(props) {
           </FormControl>
         </Grid>
       </Grid>
+      */}
       {/*-----------------MK-AUTH-----------------*/}
+      {/*
       <Grid spacing={3} container
         style={{ marginBottom: 10 }}>
         <Tabs
@@ -553,7 +556,9 @@ export default function Options(props) {
           </FormControl>
         </Grid>
       </Grid>
+      */}
       {/*-----------------ASAAS-----------------*/}
+      {/*
       <Grid spacing={3} container
         style={{ marginBottom: 10 }}>
         <Tabs
@@ -586,6 +591,7 @@ export default function Options(props) {
           </FormControl>
         </Grid>
       </Grid>
+      */}
     </>
   );
 }
