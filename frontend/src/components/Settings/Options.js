@@ -17,7 +17,7 @@ import { grey, blue } from "@material-ui/core/colors";
 import { Tabs, Tab } from "@material-ui/core";
 
 //import 'react-toastify/dist/ReactToastify.css';
- 
+
 const useStyles = makeStyles((theme) => ({
   container: {
     paddingTop: theme.spacing(4),
@@ -385,6 +385,7 @@ export default function Options(props) {
             </FormHelperText>
           </FormControl>
         </Grid>
+        {/*
         <Grid xs={12} sm={6} md={4} item>
           <FormControl className={classes.selectContainer}>
             <InputLabel id="chatbot-type-label">
@@ -406,7 +407,8 @@ export default function Options(props) {
             </FormHelperText>
           </FormControl>
         </Grid>
-      </Grid>
+
+      </Grid>  */}
       <Grid spacing={3} container>
         <Tabs
           indicatorColor="primary"
