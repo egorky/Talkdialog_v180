@@ -269,13 +269,13 @@ const MainListItems = (props) => {
           </Badge>
         }
       />
-
+     {/*}
       <ListItemLink
         to="/helps"
         primary={i18n.t("mainDrawer.listItems.helps")}
         icon={<HelpOutlineIcon />}
       />
-
+      */}
       <Can
         role={user.profile}
         perform="drawer-admin-items:view"
@@ -363,7 +363,7 @@ const MainListItems = (props) => {
               to="/users"
               primary={i18n.t("mainDrawer.listItems.users")}
               icon={<PeopleAltOutlinedIcon />}
-            /> 
+            />
             <ListItemLink
               to="/messages-api"
               primary={i18n.t("mainDrawer.listItems.messagesAPI")}
