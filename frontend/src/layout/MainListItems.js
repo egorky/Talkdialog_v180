@@ -285,6 +285,7 @@ const MainListItems = (props) => {
             <ListSubheader inset>
               {i18n.t("mainDrawer.listItems.administration")}
             </ListSubheader>
+            {/*}
             {showCampaigns && (
               <>
                 <ListItem
@@ -303,7 +304,7 @@ const MainListItems = (props) => {
                     <ExpandMoreIcon />
                   )}
                 </ListItem>
-                {/*}
+
                 <Collapse
                   style={{ paddingLeft: 15 }}
                   in={openCampaignSubmenu}
