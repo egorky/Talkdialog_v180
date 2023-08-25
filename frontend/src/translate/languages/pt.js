@@ -31,7 +31,7 @@ const messages = {
 	locationPreview: {
         toView: "Visualizar",
         download: "Baixar",
-        hello: "Diga olá ao seu novo contato!"
+        hello: "Diga olï¿½ ao seu novo contato!"
       },
 
       vcardPreview: {
@@ -254,7 +254,7 @@ const messages = {
           titleUploadMsgDragDrop: "ARRASTE E SOLTE ARQUIVOS NO CAMPO ABAIXO",
           titleFileList: "Lista de arquivo(s)"
         },
-      },      
+      },
       ticketsManager: {
         buttons: {
           newTicket: "Novo",
@@ -294,7 +294,7 @@ const messages = {
         },
       },
       ticketsList: {
-        pendingHeader: "ChatBot",
+        pendingHeader: "Aguardando",
         assignedHeader: "Atendendo",
         noTicketsTitle: "Nada aqui!",
         noTicketsMessage:
