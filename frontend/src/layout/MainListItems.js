@@ -303,6 +303,7 @@ const MainListItems = (props) => {
                     <ExpandMoreIcon />
                   )}
                 </ListItem>
+                {/*}
                 <Collapse
                   style={{ paddingLeft: 15 }}
                   in={openCampaignSubmenu}
@@ -337,7 +338,7 @@ const MainListItems = (props) => {
                   </List>
                 </Collapse>
               </>
-            )}
+            )} */}
             {user.super && (
               <ListItemLink
                 to="/announcements"
