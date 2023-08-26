@@ -11,16 +11,24 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 
-import InputAdornment from "@material-ui/core/InputAdornment";
-import IconButton from "@material-ui/core/IconButton";
-
-
 import { i18n } from "../../translate/i18n";
 
 import { AuthContext } from "../../context/Auth/AuthContext";
-
-import background from '../../assets/background_login.png';
 import logo from "../../assets/logo.png";
+
+
+// const Copyright = () => {
+// 	return (
+// 		<Typography variant="body2" color="textSecondary" align="center">
+// 			{"Copyleft "}
+// 			<Link color="inherit" href="https://github.com/canove">
+// 				Canove
+// 			</Link>{" "}
+// 			{new Date().getFullYear()}
+// 			{"."}
+// 		</Typography>
+// 	);
+// };
 
 const useStyles = makeStyles(theme => ({
 	paper: {
@@ -28,10 +36,6 @@ const useStyles = makeStyles(theme => ({
 		display: "flex",
 		flexDirection: "column",
 		alignItems: "center",
-		padding: theme.spacing(2),
-		borderRadius: theme.spacing(2),
-		backgroundColor: theme.palette.background.paper,
-		boxShadow: "0px 3px 6px rgba(0, 0, 0, 0.16)",
 	},
 	avatar: {
 		margin: theme.spacing(1),
@@ -44,10 +48,6 @@ const useStyles = makeStyles(theme => ({
 	submit: {
 		margin: theme.spacing(3, 0, 2),
 	},
-	logo: {
-		maxWidth: 300,
-		marginBottom: -20,
-	}
 }));
 
 const Login = () => {
@@ -69,10 +69,13 @@ const Login = () => {
 	return (
 		<Container component="main" maxWidth="xs">
 			<CssBaseline />
-			<div>
-				<img className={classes.logo} src={logo} alt="Talkdialog" />
-			</div>
 			<div className={classes.paper}>
+				<div>
+					<img style={{ margin: "0 auto", width: "80%" }} src={logo} alt="Talkdialog" />
+				</div>
+				{/*<Typography component="h1" variant="h5">
+					{i18n.t("login.title")}
+				</Typography>*/}
 				<form className={classes.form} noValidate onSubmit={handlSubmit}>
 					<TextField
 						variant="outlined"
