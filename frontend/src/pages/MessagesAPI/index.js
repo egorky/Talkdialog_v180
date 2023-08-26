@@ -53,15 +53,15 @@ const MessagesAPI = () => {
       },
       data
     };
-    
+
     axios.request(options).then(function (response) {
       toast.success('Mensagem enviada com sucesso');
     }).catch(function (error) {
       toastError(error);
-    });    
+    });
   }
 
-  const handleSendMediaMessage = async (values) => { 
+  const handleSendMediaMessage = async (values) => {
     try {
       const firstFile =  file[0];
       const data = new FormData();
@@ -77,12 +77,12 @@ const MessagesAPI = () => {
         },
         data
       };
-      
+
       axios.request(options).then(function (response) {
         toast.success('Mensagem enviada com sucesso');
       }).catch(function (error) {
         toastError(error);
-      });      
+      });
     } catch (err) {
       toastError(err);
     }
@@ -292,7 +292,7 @@ const MessagesAPI = () => {
         </Grid>
       </Grid>
       <Typography variant="h6" color="primary" className={classes.elementMargin}>
-        2. Mensagens de Media
+        2. Mensagens de Midia
       </Typography>
       <Grid container>
         <Grid item xs={12} sm={6}>
