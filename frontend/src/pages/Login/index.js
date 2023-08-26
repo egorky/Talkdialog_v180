@@ -44,6 +44,10 @@ const useStyles = makeStyles(theme => ({
 	submit: {
 		margin: theme.spacing(3, 0, 2),
 	},
+	logo: {
+		maxWidth: 300,
+		marginBottom: -20,
+	}
 }));
 
 const Login = () => {
@@ -66,7 +70,7 @@ const Login = () => {
 		<Container component="main" maxWidth="xs">
 			<CssBaseline />
 			<div>
-				<img style={{ margin: "0 auto", width: "80%" }} src={logo} alt="Talkdialog" />
+				<img className={classes.logo} src={logo} alt="Talkdialog" />
 			</div>
 			<div className={classes.paper}>
 				<form className={classes.form} noValidate onSubmit={handlSubmit}>
