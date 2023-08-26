@@ -151,7 +151,7 @@ const Login = () => {
           <Container component="div" maxWidth="xs" className={classes.mobileContainer}>
           <div className={classes.loginContent}>
             <form style={{ display: "grid" }} noValidate onSubmit={handleSubmit} >
-              <img className={classes.logo} src={logo} alt="logo" ></img>
+              <img className={classes.logo} src={logo} alt="logo" width="80%"></img>
                 <TextField
                   variant="standard"
                   margin="normal"
