@@ -11,24 +11,16 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 
+import InputAdornment from "@material-ui/core/InputAdornment";
+import IconButton from "@material-ui/core/IconButton";
+
+
 import { i18n } from "../../translate/i18n";
 
 import { AuthContext } from "../../context/Auth/AuthContext";
+
+import background from '../../assets/background_login.png';
 import logo from "../../assets/logo.png";
-
-
-// const Copyright = () => {
-// 	return (
-// 		<Typography variant="body2" color="textSecondary" align="center">
-// 			{"Copyleft "}
-// 			<Link color="inherit" href="https://github.com/canove">
-// 				Canove
-// 			</Link>{" "}
-// 			{new Date().getFullYear()}
-// 			{"."}
-// 		</Typography>
-// 	);
-// };
 
 const useStyles = makeStyles(theme => ({
 	paper: {
@@ -36,6 +28,10 @@ const useStyles = makeStyles(theme => ({
 		display: "flex",
 		flexDirection: "column",
 		alignItems: "center",
+		padding: theme.spacing(2),
+		borderRadius: theme.spacing(2),
+		backgroundColor: theme.palette.background.paper,
+		boxShadow: "0px 3px 6px rgba(0, 0, 0, 0.16)",
 	},
 	avatar: {
 		margin: theme.spacing(1),
