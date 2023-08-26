@@ -65,13 +65,10 @@ const Login = () => {
 	return (
 		<Container component="main" maxWidth="xs">
 			<CssBaseline />
+			<div>
+				<img style={{ margin: "0 auto", width: "80%" }} src={logo} alt="Talkdialog" />
+			</div>
 			<div className={classes.paper}>
-				<div>
-					<img style={{ margin: "0 auto", width: "80%" }} src={logo} alt="Talkdialog" />
-				</div>
-				{/*<Typography component="h1" variant="h5">
-					{i18n.t("login.title")}
-				</Typography>*/}
 				<form className={classes.form} noValidate onSubmit={handlSubmit}>
 					<TextField
 						variant="outlined"
